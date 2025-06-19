@@ -4,7 +4,6 @@ primary_region = "gru"
 [build]
 
 [env]
-PORT = "8080"  # Pode até remover isso se não quiser, nem precisa de PORT.
 
 [processes]
   app = "python bot.py"

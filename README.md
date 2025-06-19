@@ -1,22 +1,21 @@
 # Bot Telegram Drive com Fly.io
 
-Este bot faz postagens automáticas no Telegram usando imagens de uma pasta no Google Drive.
+Este bot faz postagens automáticas no Telegram rodando no Fly.io como Background Worker.
 
-## Como usar no Fly.io
+## 🚀 Como usar:
 
 1. Instale o CLI do Fly.io: https://fly.io/docs/hands-on/install-flyctl/
 2. Execute `fly launch` na pasta do projeto.
-3. Configure as variáveis de ambiente usando `fly secrets set`:
+3. Configure os secrets:
 
-- TOKEN
-- CANAL_ID
-- YUAN_PARA_REAL
-- YUAN_PARA_EURO
-- DRIVE_FOLDER_ID
-- GOOGLE_APPLICATION_CREDENTIALS_JSON (insira o JSON inteiro da chave do Google Drive)
+```
+fly secrets set TOKEN="seu-token" CANAL_ID="@seucanal"
+```
 
-4. Deploy com `fly deploy`.
+4. Deploy:
 
-## Observação
+```
+fly deploy
+```
 
-Este projeto usa Docker, portanto ignora limitações de versão de Python no servidor.
+Pronto! O bot estará rodando no Fly.io como worker, sem precisar de portas ou servidores web.
