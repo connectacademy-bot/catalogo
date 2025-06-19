@@ -1,8 +1,8 @@
 app = "catalogo-o0e1uw"
 primary_region = "gru"
 
-[env]
-PORT = "8080"
-
 [processes]
 worker = "python bot.py"
+
+[env]
+POST_INTERVAL = "100" # se quiser ajustar o tempo entre postagens no próprio Fly.io
