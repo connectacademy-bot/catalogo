@@ -4,16 +4,7 @@ primary_region = "gru"
 [build]
 
 [env]
-PORT = "8080"
+PORT = "8080"  # Pode até remover isso se não quiser, nem precisa de PORT.
 
-[[services]]
-internal_port = 8080
-protocol = "tcp"
-
-[[services.ports]]
-handlers = ["http"]
-port = 80
-
-[[services.ports]]
-handlers = ["tls", "http"]
-port = 443
+[processes]
+  app = "python bot.py"
