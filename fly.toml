@@ -1,9 +1,4 @@
-app = "bot-telegram-flyio"
+app = "catalogo-wkymcg"
 primary_region = "gru"
 
-[build]
-
 [env]
-
-[processes]
-  app = "python bot.py"
