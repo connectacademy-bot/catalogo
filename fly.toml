@@ -1,7 +1,5 @@
-app = "bot-telegram-flyio"
+app = "catalogo-o0e1uw"
 primary_region = "gru"
-
-[build]
 
 [env]
 PORT = "8080"
